@@ -1,0 +1,37 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #26cfcf;
+}
+
+.body_section {
+  background-color: #ceebeb;
+  height: 500px;
+  width: 500px;
+  border-radius: 20px 0px 20px 0px;
+  flex-direction: column;
+}
+h1 {
+  padding: 20px;
+  font-size: 50px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+.input_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: grid;
+  font-size: medium;
+  font-weight: bold;
+}
+
