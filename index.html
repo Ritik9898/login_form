@@ -11,13 +11,32 @@
       <h1>Login Page</h1>
       <div class="input_form">
         <form>
-          <label for="email">
-            Email : <input type="email" name="email" placeholder="email" />
+          <label for="email" class="email_lab">
+            Email <br />
+            <input
+              type="email"
+              name="email"
+              placeholder="Username"
+              class="imp_input"
+            />
           </label>
           <label for="password">
-            Password :
-            <input type="password" name="password" placeholder="password" />
+            Password <br />
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter Your Password"
+              class="imp_input"
+            />
           </label>
+          <div class="chec_link">
+            <label for="checkbox" class="checkbox_lab">
+              <input type="checkbox" name="checkbox" />
+              Remember me
+            </label>
+            <a href="#" class="forg_link">Forgot password?</a>
+          </div>
+          <button>LOGIN</button>
         </form>
       </div>
     </div>
