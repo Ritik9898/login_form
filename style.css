@@ -1,76 +1,112 @@
-body {
-  padding: 0;
+/* Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #26cfcf;
+  background: linear-gradient(135deg, #26cfcf, #6be3e3);
 }
 
+/* Card */
 .body_section {
-  background-color: #ceebeb;
-  height: 500px;
-  width: 500px;
-  border-radius: 20px 0px 20px 0px;
+  background-color: #ffffff;
+  width: 380px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  display: flex;
   flex-direction: column;
 }
+
+/* Heading */
 h1 {
-  padding: 20px;
-  font-size: 50px;
-  font-weight: bolder;
-  display: flex;
-  justify-content: center;
-}
-.input_form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+  color: #333;
 }
 
+/* Form */
 form {
-  display: grid;
   width: 100%;
-  justify-content: space-around;
 }
+
+/* Labels */
 label {
-  font-size: medium;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
 }
 
-.email_lab {
-  padding-bottom: 10px;
-}
+/* Inputs */
 .imp_input {
-  width: 20rem;
-  height: 1.2rem;
-  border-radius: 10px 0px 10px 0px;
-  margin-top: 10px;
-  background-color: white;
-  color: black;
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
 }
 
-.checkbox_lab {
-  padding-top: 10px;
-}
-.forg_link {
-  color: black;
-  text-decoration: none;
+/* Input focus effect */
+.imp_input:focus {
+  border-color: #26cfcf;
+  box-shadow: 0 0 5px rgba(38, 207, 207, 0.5);
 }
 
+/* Checkbox + link row */
 .chec_link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
-button {
-  height: 2rem;
-  margin-top: 30px;
-  background-color: #ceebeb;
-  border-radius: 20px 0px 20px 0px;
+/* Checkbox label */
+.checkbox_lab {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-button:hover {
-  background-color: #26cfcf;
-  cursor: pointer;
+
+/* Forgot link */
+.forg_link {
+  text-decoration: none;
+  color: #26cfcf;
+  transition: 0.3s;
+}
+
+.forg_link:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #26cfcf;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
   font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover */
+button:hover {
+  background: #1aa7a7;
+  transform: scale(1.03);
 }
