@@ -1,42 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="body_section">
       <h1>Login Page</h1>
+
       <div class="input_form">
-        <form>
+        <form action="#" method="POST">
+          <!-- Email -->
           <label for="email" class="email_lab">
             Email <br />
             <input
               type="email"
+              id="email"
               name="email"
-              placeholder="Username"
+              placeholder="Enter your email"
               class="imp_input"
+              required
             />
           </label>
+
+          <br /><br />
+
+          <!-- Password -->
           <label for="password">
             Password <br />
             <input
               type="password"
+              id="password"
               name="password"
-              placeholder="Enter Your Password"
+              placeholder="Enter your password"
               class="imp_input"
+              required
             />
           </label>
+
+          <br /><br />
+
+          <!-- Checkbox + Link -->
           <div class="chec_link">
-            <label for="checkbox" class="checkbox_lab">
-              <input type="checkbox" name="checkbox" />
+            <label for="remember" class="checkbox_lab">
+              <input type="checkbox" id="remember" name="remember" />
               Remember me
             </label>
+
             <a href="#" class="forg_link">Forgot password?</a>
           </div>
-          <button>LOGIN</button>
+
+          <br />
+
+          <!-- Button -->
+          <button type="submit">LOGIN</button>
         </form>
       </div>
     </div>
